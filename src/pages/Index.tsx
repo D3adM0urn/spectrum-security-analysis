@@ -5,52 +5,81 @@ import Icon from "@/components/ui/icon";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 to-black text-white">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="bg-black/90 backdrop-blur-sm fixed w-full z-50 border-b border-primary/20">
+      <header className="bg-white/95 backdrop-blur-sm fixed w-full z-50 shadow-sm border-b border-border">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <Icon name="Shield" className="h-8 w-8 text-secondary" />
-            <span className="text-2xl font-bold">SPK-SPECTRUM</span>
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <Icon name="Shield" className="h-6 w-6 text-white" />
+            </div>
+            <div>
+              <div className="text-xl font-bold text-primary">SPK-SPECTRUM</div>
+              <div className="text-xs text-muted-foreground">Корпоративная безопасность</div>
+            </div>
           </div>
-          <nav className="hidden md:flex space-x-6">
-            <a href="#services" className="hover:text-secondary transition-colors">Услуги</a>
-            <a href="#team" className="hover:text-secondary transition-colors">Команда</a>
-            <a href="#advantages" className="hover:text-secondary transition-colors">Преимущества</a>
-            <a href="#contact" className="hover:text-secondary transition-colors">Контакты</a>
+          <nav className="hidden lg:flex space-x-8">
+            <a href="#services" className="text-foreground hover:text-primary transition-colors font-medium">Услуги</a>
+            <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">О нас</a>
+            <a href="#team" className="text-foreground hover:text-primary transition-colors font-medium">Команда</a>
+            <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">Контакты</a>
           </nav>
-          <Button className="bg-primary hover:bg-secondary">
-            Консультация
-          </Button>
+          <div className="flex items-center space-x-3">
+            <span className="hidden md:block text-sm text-muted-foreground">+7 (800) 123-45-67</span>
+            <Button className="bg-primary hover:bg-secondary">
+              Консультация
+            </Button>
+          </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/img/0c489ad6-b774-4ac0-9781-72fa49302b86.jpg" 
-            alt="Security background"
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-primary/60"></div>
-        </div>
-        <div className="relative z-10 text-center max-w-4xl px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Корпоративная<br />
-            <span className="text-secondary">Безопасность</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
-            Профессиональные услуги кадрового профайлинга, психофизиологических исследований и защиты репутации
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-secondary hover:bg-primary text-lg px-8 py-4">
-              <Icon name="Phone" className="mr-2 h-5 w-5" />
-              Получить консультацию
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-black">
-              Подробнее
-            </Button>
+      <section className="pt-20 pb-16 bg-gradient-to-br from-slate-50 to-blue-50/50">
+        <div className="container mx-auto px-4 py-16">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <Badge variant="outline" className="mb-4 text-primary border-primary/20">
+                Профессиональные услуги безопасности
+              </Badge>
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Кадровая безопасность<br />
+              <span className="text-primary">и профайлинг</span>
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+              Защитите свой бизнес от внутренних угроз с помощью комплексной оценки персонала, 
+              полиграфа и OSINT-анализа
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <Button size="lg" className="bg-primary hover:bg-secondary text-lg px-8 py-4">
+                <Icon name="Phone" className="mr-2 h-5 w-5" />
+                Получить консультацию
+              </Button>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-white">
+                <Icon name="FileText" className="mr-2 h-5 w-5" />
+                Скачать презентацию
+              </Button>
+            </div>
+            
+            {/* Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-1">15+</div>
+                <div className="text-sm text-muted-foreground">лет опыта</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-1">500+</div>
+                <div className="text-sm text-muted-foreground">проверок</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-1">100+</div>
+                <div className="text-sm text-muted-foreground">клиентов</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-1">24/7</div>
+                <div className="text-sm text-muted-foreground">поддержка</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
