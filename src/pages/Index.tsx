@@ -85,89 +85,140 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-slate-900/50">
+      <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Наши Услуги</h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Комплексные решения для обеспечения безопасности вашего бизнеса
+            <Badge variant="outline" className="mb-4 text-muted-foreground border-border">
+              Наши услуги
+            </Badge>
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Комплексные решения безопасности</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Профессиональная защита вашего бизнеса от внутренних и внешних угроз
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="bg-black/40 border-primary/20 hover:border-secondary/50 transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-3 bg-primary/20 rounded-full w-fit">
-                  <Icon name="UserCheck" className="h-8 w-8 text-secondary" />
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-6">
+                  <div className="p-3 bg-slate-100 rounded-lg">
+                    <Icon name="UserCheck" className="h-8 w-8 text-slate-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground">Кадровый профайлинг</h3>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      Комплексная оценка персонала с использованием психологических методов, 
+                      анализа цифровых следов и выявления рисков нелояльности
+                    </p>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Психологическая оценка кандидатов</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Анализ социальных сетей и цифровых следов</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Выявление антикорпоративных намерений</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <CardTitle className="text-white">Кадровый профайлинг</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-400 mb-4">
-                  Оценка персонала, прогнозирование поведения, выявление антикорпоративных рисков
-                </p>
-                <ul className="space-y-2 text-sm text-gray-300">
-                  <li>• Психологическая оценка</li>
-                  <li>• Анализ цифровых следов</li>
-                  <li>• Soft skills оценка</li>
-                </ul>
               </CardContent>
             </Card>
 
-            <Card className="bg-black/40 border-primary/20 hover:border-secondary/50 transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-3 bg-primary/20 rounded-full w-fit">
-                  <Icon name="Activity" className="h-8 w-8 text-secondary" />
+            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-6">
+                  <div className="p-3 bg-slate-100 rounded-lg">
+                    <Icon name="Activity" className="h-8 w-8 text-slate-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground">Полиграф</h3>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      Психофизиологические исследования с использованием контактного полиграфа 
+                      для выявления скрытой информации и фактов обмана
+                    </p>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Проверка на факты шпионажа</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Выявление коррупционных намерений</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Защита коммерческой тайны</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <CardTitle className="text-white">Полиграф</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-400 mb-4">
-                  Психофизиологические исследования с использованием контактного полиграфа
-                </p>
-                <ul className="space-y-2 text-sm text-gray-300">
-                  <li>• Проверка на шпионаж</li>
-                  <li>• Выявление коррупции</li>
-                  <li>• Защита коммерческой тайны</li>
-                </ul>
               </CardContent>
             </Card>
 
-            <Card className="bg-black/40 border-primary/20 hover:border-secondary/50 transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-3 bg-primary/20 rounded-full w-fit">
-                  <Icon name="Shield" className="h-8 w-8 text-secondary" />
+            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-6">
+                  <div className="p-3 bg-slate-100 rounded-lg">
+                    <Icon name="Search" className="h-8 w-8 text-slate-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground">OSINT и мониторинг</h3>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      Репутационная безопасность через мониторинг открытых источников 
+                      и анализ цифровых следов в интернет-пространстве
+                    </p>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Мониторинг упоминаний о компании</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Предотвращение репутационных кризисов</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Анализ конкурентов и контрагентов</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <CardTitle className="text-white">Репутационная безопасность</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-400 mb-4">
-                  OSINT-анализ и мониторинг интернет-пространства
-                </p>
-                <ul className="space-y-2 text-sm text-gray-300">
-                  <li>• Мониторинг упоминаний</li>
-                  <li>• Предотвращение кризисов</li>
-                  <li>• Анализ конкурентов</li>
-                </ul>
               </CardContent>
             </Card>
 
-            <Card className="bg-black/40 border-primary/20 hover:border-secondary/50 transition-all duration-300">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-3 bg-primary/20 rounded-full w-fit">
-                  <Icon name="Code" className="h-8 w-8 text-secondary" />
+            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-6">
+                  <div className="p-3 bg-slate-100 rounded-lg">
+                    <Icon name="Code" className="h-8 w-8 text-slate-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground">Разработка ПО</h3>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      Профессиональная разработка программного обеспечения для обеспечения 
+                      технической безопасности и автоматизации процессов
+                    </p>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Тестирование на проникновение</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Full-Stack веб-разработка</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Облачные решения и DevSecOps</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <CardTitle className="text-white">Разработка ПО</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-400 mb-4">
-                  Профессиональная разработка программного обеспечения на заказ
-                </p>
-                <ul className="space-y-2 text-sm text-gray-300">
-                  <li>• Тестирование безопасности</li>
-                  <li>• Full-Stack разработка</li>
-                  <li>• Облачные решения</li>
-                </ul>
               </CardContent>
             </Card>
           </div>
