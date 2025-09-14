@@ -282,73 +282,76 @@ export default function Index() {
       </section>
 
       {/* Advantages Section */}
-      <section id="advantages" className="py-20 bg-slate-900/50">
+      <section id="advantages" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Преимущества</h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Почему выбирают SPK-Spectrum для решения задач корпоративной безопасности
+            <Badge variant="outline" className="mb-4 text-muted-foreground border-border">
+              Наши преимущества
+            </Badge>
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Почему выбирают нас</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Профессиональный подход к решению задач корпоративной безопасности
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="flex items-start space-x-4 p-6 bg-black/20 rounded-lg border border-primary/20">
-              <div className="p-2 bg-secondary/20 rounded-lg">
-                <Icon name="CheckCircle" className="h-6 w-6 text-secondary" />
+            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
+              <div className="p-2 bg-slate-100 rounded-lg">
+                <Icon name="CheckCircle" className="h-6 w-6 text-slate-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-white">Комплексный подход</h3>
-                <p className="text-gray-400">Полный спектр услуг безопасности от одного поставщика</p>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Комплексный подход</h3>
+                <p className="text-muted-foreground">Полный спектр услуг безопасности от одного поставщика</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-black/20 rounded-lg border border-primary/20">
-              <div className="p-2 bg-secondary/20 rounded-lg">
-                <Icon name="Award" className="h-6 w-6 text-secondary" />
+            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
+              <div className="p-2 bg-slate-100 rounded-lg">
+                <Icon name="Award" className="h-6 w-6 text-slate-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-white">Экспертный опыт</h3>
-                <p className="text-gray-400">15+ лет опыта в области корпоративной безопасности</p>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Экспертный опыт</h3>
+                <p className="text-muted-foreground">15+ лет опыта в области корпоративной безопасности</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-black/20 rounded-lg border border-primary/20">
-              <div className="p-2 bg-secondary/20 rounded-lg">
-                <Icon name="Lock" className="h-6 w-6 text-secondary" />
+            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
+              <div className="p-2 bg-slate-100 rounded-lg">
+                <Icon name="Lock" className="h-6 w-6 text-slate-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-white">Конфиденциальность</h3>
-                <p className="text-gray-400">Строгое соблюдение требований безопасности данных</p>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Конфиденциальность</h3>
+                <p className="text-muted-foreground">Строгое соблюдение требований безопасности данных</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-black/20 rounded-lg border border-primary/20">
-              <div className="p-2 bg-secondary/20 rounded-lg">
-                <Icon name="Zap" className="h-6 w-6 text-secondary" />
+            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
+              <div className="p-2 bg-slate-100 rounded-lg">
+                <Icon name="Zap" className="h-6 w-6 text-slate-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-white">Современные технологии</h3>
-                <p className="text-gray-400">Использование новейших методов анализа и ИИ</p>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Современные технологии</h3>
+                <p className="text-muted-foreground">Использование новейших методов анализа и ИИ</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-black/20 rounded-lg border border-primary/20">
-              <div className="p-2 bg-secondary/20 rounded-lg">
-                <Icon name="Clock" className="h-6 w-6 text-secondary" />
+            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
+              <div className="p-2 bg-slate-100 rounded-lg">
+                <Icon name="Clock" className="h-6 w-6 text-slate-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-white">Оперативность</h3>
-                <p className="text-gray-400">Быстрое реагирование на угрозы и запросы клиентов</p>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Оперативность</h3>
+                <p className="text-muted-foreground">Быстрое реагирование на угрозы и запросы клиентов</p>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-black/20 rounded-lg border border-primary/20">
-              <div className="p-2 bg-secondary/20 rounded-lg">
-                <Icon name="FileCheck" className="h-6 w-6 text-secondary" />
+            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
+              <div className="p-2 bg-slate-100 rounded-lg">
+                <Icon name="FileCheck" className="h-6 w-6 text-slate-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-white">Детальная отчетность</h3>
-                <p className="text-gray-400">Подробные аналитические отчеты по всем исследованиям</p>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Детальная отчетность</h3>
+                <p className="text-muted-foreground">Подробные аналитические отчеты по всем исследованиям</p>
               </div>
             </div>
           </div>
