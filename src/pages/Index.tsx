@@ -226,57 +226,57 @@ export default function Index() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="py-20 bg-black/30">
+      <section id="team" className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Наша Команда</h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Опытные специалисты с уникальным профессиональным опытом
+            <Badge variant="outline" className="mb-4 text-muted-foreground border-border">
+              Наша команда
+            </Badge>
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Профессиональная экспертиза</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Команда сертифицированных специалистов с многолетним опытом в сфере безопасности
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-gradient-to-b from-primary/20 to-black/40 border-secondary/20">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-4 bg-secondary/20 rounded-full w-fit">
-                  <Icon name="UserCheck" className="h-10 w-10 text-secondary" />
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center">
+              <div className="mb-6">
+                <div className="mx-auto mb-4 w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center border border-border">
+                  <Icon name="Shield" className="h-8 w-8 text-slate-600" />
                 </div>
-                <CardTitle className="text-white">Эксперты безопасности</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-300 text-center">
-                  Специалисты с опытом работы в подразделениях по борьбе с организованной преступностью
+                <h3 className="text-xl font-semibold mb-3 text-foreground">Эксперты безопасности</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Сертифицированные специалисты с опытом работы в государственных структурах 
+                  и коммерческой безопасности
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="bg-gradient-to-b from-primary/20 to-black/40 border-secondary/20">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-4 bg-secondary/20 rounded-full w-fit">
-                  <Icon name="Brain" className="h-10 w-10 text-secondary" />
+            <div className="text-center">
+              <div className="mb-6">
+                <div className="mx-auto mb-4 w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center border border-border">
+                  <Icon name="Brain" className="h-8 w-8 text-slate-600" />
                 </div>
-                <CardTitle className="text-white">Психологи</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-300 text-center">
-                  Эксперты в клинической психологии, нейролингвистике и криминалистике
+                <h3 className="text-xl font-semibold mb-3 text-foreground">Психологи</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Кандидаты психологических наук, эксперты в области клинической психологии 
+                  и профайлинга
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="bg-gradient-to-b from-primary/20 to-black/40 border-secondary/20">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-4 bg-secondary/20 rounded-full w-fit">
-                  <Icon name="Laptop" className="h-10 w-10 text-secondary" />
+            <div className="text-center">
+              <div className="mb-6">
+                <div className="mx-auto mb-4 w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center border border-border">
+                  <Icon name="Code" className="h-8 w-8 text-slate-600" />
                 </div>
-                <CardTitle className="text-white">IT-разработчики</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-300 text-center">
-                  Дипломированные специалисты с опытом создания продуктов в области безопасности и ML
+                <h3 className="text-xl font-semibold mb-3 text-foreground">IT-специалисты</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Разработчики с опытом создания систем безопасности, 
+                  анализа данных и машинного обучения
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
