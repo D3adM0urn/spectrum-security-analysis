@@ -359,55 +359,58 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-black/60">
+      <section id="contact" className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-4">Свяжитесь с нами</h2>
-            <p className="text-gray-400 text-lg mb-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge variant="outline" className="mb-4 text-muted-foreground border-border">
+              Контакты
+            </Badge>
+            <h2 className="text-4xl font-bold mb-4 text-foreground">Свяжитесь с нами</h2>
+            <p className="text-muted-foreground text-lg mb-12">
               Получите профессиональную консультацию по вопросам корпоративной безопасности
             </p>
             
-            <Card className="bg-gradient-to-r from-primary/20 to-secondary/20 border-secondary/30">
+            <Card className="bg-white border border-border shadow-sm">
               <CardContent className="p-8">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-6">
                     <div className="flex items-center space-x-4">
-                      <div className="p-3 bg-secondary/20 rounded-full">
-                        <Icon name="Phone" className="h-6 w-6 text-secondary" />
+                      <div className="p-3 bg-slate-100 rounded-lg">
+                        <Icon name="Phone" className="h-6 w-6 text-slate-600" />
                       </div>
                       <div className="text-left">
-                        <p className="text-white font-semibold">Телефон</p>
-                        <p className="text-gray-300">+7 (800) 123-45-67</p>
+                        <p className="text-foreground font-semibold">Телефон</p>
+                        <p className="text-muted-foreground">+7 (800) 123-45-67</p>
                       </div>
                     </div>
                     
                     <div className="flex items-center space-x-4">
-                      <div className="p-3 bg-secondary/20 rounded-full">
-                        <Icon name="Mail" className="h-6 w-6 text-secondary" />
+                      <div className="p-3 bg-slate-100 rounded-lg">
+                        <Icon name="Mail" className="h-6 w-6 text-slate-600" />
                       </div>
                       <div className="text-left">
-                        <p className="text-white font-semibold">Email</p>
-                        <p className="text-gray-300">info@spk-spectrum.ru</p>
+                        <p className="text-foreground font-semibold">Email</p>
+                        <p className="text-muted-foreground">info@spk-spectrum.ru</p>
                       </div>
                     </div>
                     
                     <div className="flex items-center space-x-4">
-                      <div className="p-3 bg-secondary/20 rounded-full">
-                        <Icon name="MapPin" className="h-6 w-6 text-secondary" />
+                      <div className="p-3 bg-slate-100 rounded-lg">
+                        <Icon name="MapPin" className="h-6 w-6 text-slate-600" />
                       </div>
                       <div className="text-left">
-                        <p className="text-white font-semibold">Офис</p>
-                        <p className="text-gray-300">Москва, Россия</p>
+                        <p className="text-foreground font-semibold">Офис</p>
+                        <p className="text-muted-foreground">Москва, Россия</p>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="flex flex-col justify-center">
-                    <Button size="lg" className="mb-4 bg-secondary hover:bg-primary">
+                  <div className="flex flex-col justify-center space-y-4">
+                    <Button size="lg" className="bg-primary hover:bg-secondary">
                       <Icon name="Phone" className="mr-2 h-5 w-5" />
                       Заказать звонок
                     </Button>
-                    <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                    <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
                       <Icon name="FileText" className="mr-2 h-5 w-5" />
                       Скачать презентацию
                     </Button>
