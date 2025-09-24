@@ -97,7 +97,7 @@ export default function Index() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-1">15+</div>
-                <div className="text-sm text-muted-foreground">лет опыта</div>
+                <div className="text-sm text-muted-foreground">лет опыта специалистов</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-1">50+</div>
