@@ -100,12 +100,13 @@ export default function Index() {
                 <div className="text-sm text-muted-foreground">лет опыта</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">500+</div>
-                <div className="text-sm text-muted-foreground">проверок</div>
+                <div className="text-3xl font-bold text-primary mb-1">50+</div>
+                <div className="text-sm text-muted-foreground">Проверенных методик</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">100+</div>
-                <div className="text-sm text-muted-foreground">клиентов</div>
+                <div className="text-3xl font-bold text-primary mb-1">100%</div>
+                <div className="text-sm text-muted-foreground">Внимания каждому клиенту
+</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-1">24/7</div>
