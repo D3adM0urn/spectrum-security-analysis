@@ -34,28 +34,37 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-slate-50 to-blue-50/50">
-        <div className="container mx-auto px-4 py-16">
+      <section className="pt-20 pb-16 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-gradient-to-br from-slate-900/80 to-blue-900/60"
+          style={{
+            backgroundImage: `url('/img/bb0b5f04-b3d1-4241-9cf2-0ff1fef49848.jpg')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        />
+        <div className="relative z-10 container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-6">
-              <Badge variant="outline" className="mb-4 text-primary border-primary/20">
+              <Badge variant="outline" className="mb-4 text-white border-white/30 bg-white/10">
                 Профессиональные услуги безопасности
               </Badge>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
               Кадровая безопасность<br />
-              <span className="text-primary">и профайлинг</span>
+              <span className="text-blue-300">и профайлинг</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
               Защитите свой бизнес от внутренних угроз с помощью комплексной оценки персонала, 
               полиграфа и OSINT-анализа
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button size="lg" className="bg-primary hover:bg-secondary text-lg px-8 py-4">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4">
                 <Icon name="Phone" className="mr-2 h-5 w-5" />
                 Получить консультацию
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-white">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-black">
                 <Icon name="FileText" className="mr-2 h-5 w-5" />
                 Скачать презентацию
               </Button>
@@ -64,20 +73,20 @@ export default function Index() {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">15+</div>
-                <div className="text-sm text-muted-foreground">лет опыта</div>
+                <div className="text-3xl font-bold text-blue-300 mb-1">15+</div>
+                <div className="text-sm text-white/80">лет опыта</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">500+</div>
-                <div className="text-sm text-muted-foreground">проверок</div>
+                <div className="text-3xl font-bold text-blue-300 mb-1">500+</div>
+                <div className="text-sm text-white/80">проверок</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">100+</div>
-                <div className="text-sm text-muted-foreground">клиентов</div>
+                <div className="text-3xl font-bold text-blue-300 mb-1">100+</div>
+                <div className="text-sm text-white/80">клиентов</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">24/7</div>
-                <div className="text-sm text-muted-foreground">поддержка</div>
+                <div className="text-3xl font-bold text-blue-300 mb-1">24/7</div>
+                <div className="text-sm text-white/80">поддержка</div>
               </div>
             </div>
           </div>
