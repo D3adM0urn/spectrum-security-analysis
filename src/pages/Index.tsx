@@ -47,9 +47,7 @@ export default function Index() {
             </a>
           </nav>
           <div className="flex items-center space-x-3">
-            <span className="hidden md:block text-sm text-muted-foreground">
-              +7 (800) 123-45-67
-            </span>
+            <span className="hidden md:block text-sm text-muted-foreground">info@spk-spectrum.ru</span>
             <Button className="bg-primary hover:bg-secondary">
               Консультация
             </Button>
