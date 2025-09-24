@@ -653,7 +653,7 @@ export default function Index() {
                       </div>
                       <div className="text-left">
                         <p className="text-foreground font-semibold">Офис</p>
-                        <p className="text-muted-foreground">Москва, Россия</p>
+                        <p className="text-muted-foreground">Магнитогорск, Россия</p>
                       </div>
                     </div>
                   </div>
