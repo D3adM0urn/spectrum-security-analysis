@@ -221,6 +221,78 @@ export default function Index() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-6">
+                  <div className="p-3 bg-slate-100 rounded-lg">
+                    <Icon name="Shield" className="h-8 w-8 text-slate-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground">Корпоративная безопасность</h3>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      Комплексные решения для защиты организации от внутренних и внешних угроз
+                    </p>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Расследования: внутренние проверки</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Разработка и внедрение архитектуры безопасности</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Проверки контрагентов с составлением отчёта по рискам</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Мониторинг информационной среды</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Аудит системы технической защищенности объектов</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-6">
+                  <div className="p-3 bg-slate-100 rounded-lg">
+                    <Icon name="PenTool" className="h-8 w-8 text-slate-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground">Графологический анализ почерка</h3>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      Профессиональный анализ почерка для оценки личностных качеств и психологических особенностей
+                    </p>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Кадровый менеджмент</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Составление психологического портрета</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Детекция лжи на основе графологических следов</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon name="Check" className="h-4 w-4 text-green-600 mr-3 flex-shrink-0" />
+                        <span>Оценка благонадежности и личностных качеств</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
