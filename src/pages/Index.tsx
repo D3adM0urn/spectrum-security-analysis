@@ -74,10 +74,9 @@ export default function Index() {
               <br />
               <span className="text-primary">и профайлинг</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-              Защитите свой бизнес от внутренних угроз с помощью комплексной
-              оценки персонала, полиграфа и OSINT-анализа
-            </p>
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">Защитите свой бизнес от внутренних угроз с помощью комплексной оценки персонала, полиграфа и OSINT-разведки, комплексных IT-продуктов в сфере безопасности
+
+</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button
                 size="lg"
