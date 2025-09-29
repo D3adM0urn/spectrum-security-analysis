@@ -692,9 +692,7 @@ export default function Index() {
               <Badge
                 variant="outline"
                 className="text-gray-400 border-gray-600"
-              >
-                Лицензия ФСБ
-              </Badge>
+              ></Badge>
               <Badge
                 variant="outline"
                 className="text-gray-400 border-gray-600"
