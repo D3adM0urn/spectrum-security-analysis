@@ -645,18 +645,6 @@ export default function Index() {
                   <div className="space-y-6">
                     <div className="flex items-center space-x-4">
                       <div className="p-3 bg-slate-100 rounded-lg">
-                        <Icon name="Phone" className="h-6 w-6 text-slate-600" />
-                      </div>
-                      <div className="text-left">
-                        <p className="text-foreground font-semibold">Телефон</p>
-                        <p className="text-muted-foreground">
-                          +7 (800) 123-45-67
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center space-x-4">
-                      <div className="p-3 bg-slate-100 rounded-lg">
                         <Icon name="Mail" className="h-6 w-6 text-slate-600" />
                       </div>
                       <div className="text-left">
