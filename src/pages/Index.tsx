@@ -54,7 +54,7 @@ export default function Index() {
             <span className="hidden md:block text-sm text-muted-foreground">info@spk-spectrum.ru</span>
             <Button 
               className="bg-primary hover:bg-secondary"
-              onClick={() => setContactDialogOpen(true)}
+              onClick={() => setIsDialogOpen(true)}
             >
               Консультация
             </Button>
@@ -685,7 +685,7 @@ export default function Index() {
                     <Button 
                       size="lg" 
                       className="bg-primary hover:bg-secondary"
-                      onClick={() => setContactDialogOpen(true)}
+                      onClick={() => setIsDialogOpen(true)}
                     >
                       <Icon name="Phone" className="mr-2 h-5 w-5" />
                       Заказать звонок
