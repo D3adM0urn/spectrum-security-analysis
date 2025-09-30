@@ -15,7 +15,7 @@ from email.mime.multipart import MIMEMultipart
 from typing import Dict, Any, Optional
 from datetime import datetime
 
-def send_telegram_message(bot_token: str, chat_id: str, name: str, phone: str, timestamp: str) -> bool:
+def send_telegram_message(bot_token:8443654829:AAFDfTXORdyxbYgaNFSYC4ZWEv7IV_1wPkw str, chat_id:825491014 str, name: str, phone: str, timestamp: str) -> bool:
     try:
         message = f"""🔔 <b>Новая заявка с сайта</b>
         
