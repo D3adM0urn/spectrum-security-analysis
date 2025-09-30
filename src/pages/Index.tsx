@@ -51,7 +51,7 @@ export default function Index() {
             </a>
           </nav>
           <div className="flex items-center space-x-3">
-            <span className="hidden md:block text-sm text-muted-foreground">info@spk-spectrum.ru</span>
+            <span className="hidden md:block text-sm text-muted-foreground">info@spc-spectrum.ru</span>
             <Button 
               className="bg-primary hover:bg-secondary"
               onClick={() => setIsDialogOpen(true)}
