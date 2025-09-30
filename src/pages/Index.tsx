@@ -52,7 +52,10 @@ export default function Index() {
           </nav>
           <div className="flex items-center space-x-3">
             <span className="hidden md:block text-sm text-muted-foreground">info@spk-spectrum.ru</span>
-            <Button className="bg-primary hover:bg-secondary">
+            <Button 
+              className="bg-primary hover:bg-secondary"
+              onClick={() => setContactDialogOpen(true)}
+            >
               Консультация
             </Button>
           </div>
