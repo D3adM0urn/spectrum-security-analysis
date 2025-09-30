@@ -506,9 +506,7 @@ export default function Index() {
             <h2 className="text-4xl font-bold mb-4 text-foreground">
               Почему выбирают нас
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Профессиональный подход к решению задач корпоративной безопасности
-            </p>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Профессиональный подход к решению задач в области корпоративной безопасности</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
