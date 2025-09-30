@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import ContactDialog from "@/components/ContactDialog";
 
 export default function Index() {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
@@ -79,6 +83,7 @@ export default function Index() {
               <Button
                 size="lg"
                 className="bg-primary hover:bg-secondary text-lg px-8 py-4"
+                onClick={() => setIsDialogOpen(true)}
               >
                 <Icon name="Phone" className="mr-2 h-5 w-5" />
                 Получить консультацию
@@ -731,6 +736,8 @@ export default function Index() {
           </div>
         </div>
       </footer>
+
+      <ContactDialog open={isDialogOpen} onOpenChange={setIsDialogOpen} />
     </div>
   );
 }
