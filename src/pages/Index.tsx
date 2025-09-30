@@ -661,9 +661,7 @@ export default function Index() {
                       </div>
                       <div className="text-left">
                         <p className="text-foreground font-semibold">Email</p>
-                        <p className="text-muted-foreground">
-                          info@spk-spectrum.ru
-                        </p>
+                        <p className="text-muted-foreground">info@spc-spectrum.ru</p>
                       </div>
                     </div>
 
