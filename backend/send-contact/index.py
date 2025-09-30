@@ -1,5 +1,5 @@
 """
-Business: Обработка заявок с формы обратной связи и отправка на email
+Business: Обработка заявок с формы обратной связи и отправка на email и Telegram
 Args: event - dict с httpMethod, body (JSON с name, phone)
       context - объект с атрибутами request_id, function_name
 Returns: HTTP response dict
@@ -8,10 +8,40 @@ Returns: HTTP response dict
 import json
 import smtplib
 import os
+import urllib.request
+import urllib.parse
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from datetime import datetime
+
+def send_telegram_message(bot_token: str, chat_id: str, name: str, phone: str, timestamp: str) -> bool:
+    try:
+        message = f"""🔔 <b>Новая заявка с сайта</b>
+        
+<b>SPK-SPECTRUM Corporate Security</b>
+
+👤 <b>Имя:</b> {name}
+📱 <b>Телефон:</b> {phone}
+⏰ <b>Время:</b> {timestamp}
+
+━━━━━━━━━━━━━━━━━
+Заявка с сайта spk-spectrum.ru"""
+
+        url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
+        data = urllib.parse.urlencode({
+            'chat_id': chat_id,
+            'text': message,
+            'parse_mode': 'HTML'
+        }).encode('utf-8')
+        
+        req = urllib.request.Request(url, data=data)
+        with urllib.request.urlopen(req) as response:
+            result = json.loads(response.read().decode('utf-8'))
+            return result.get('ok', False)
+    except Exception as e:
+        print(f'Telegram error: {e}')
+        return False
 
 def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     method: str = event.get('httpMethod', 'GET')
@@ -63,18 +93,27 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     smtp_password = os.environ.get('SMTP_PASSWORD', '')
     email_to = os.environ.get('EMAIL_TO', '')
     
-    if not all([smtp_host, smtp_user, smtp_password, email_to]):
+    telegram_bot_token = os.environ.get('TELEGRAM_BOT_TOKEN', '')
+    telegram_chat_id = os.environ.get('TELEGRAM_CHAT_ID', '')
+    
+    has_email = all([smtp_host, smtp_user, smtp_password, email_to])
+    has_telegram = all([telegram_bot_token, telegram_chat_id])
+    
+    if not has_email and not has_telegram:
         return {
             'statusCode': 500,
             'headers': {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'
             },
-            'body': json.dumps({'error': 'Email configuration is missing'}),
+            'body': json.dumps({'error': 'No notification method configured (email or telegram)'}),
             'isBase64Encoded': False
         }
     
     timestamp = datetime.now().strftime('%d.%m.%Y %H:%M:%S')
+    
+    email_sent = False
+    telegram_sent = False
     
     msg = MIMEMultipart('alternative')
     msg['Subject'] = f'Новая заявка с сайта SPK-SPECTRUM от {name}'
@@ -140,11 +179,31 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     msg.attach(part1)
     msg.attach(part2)
     
-    try:
-        with smtplib.SMTP(smtp_host, smtp_port) as server:
-            server.starttls()
-            server.login(smtp_user, smtp_password)
-            server.send_message(msg)
+    if has_email:
+        try:
+            with smtplib.SMTP(smtp_host, smtp_port) as server:
+                server.starttls()
+                server.login(smtp_user, smtp_password)
+                server.send_message(msg)
+            email_sent = True
+        except Exception as e:
+            print(f'Email error: {e}')
+    
+    if has_telegram:
+        telegram_sent = send_telegram_message(
+            telegram_bot_token, 
+            telegram_chat_id, 
+            name, 
+            phone, 
+            timestamp
+        )
+    
+    if email_sent or telegram_sent:
+        methods = []
+        if email_sent:
+            methods.append('email')
+        if telegram_sent:
+            methods.append('telegram')
         
         return {
             'statusCode': 200,
@@ -154,11 +213,11 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             },
             'body': json.dumps({
                 'success': True,
-                'message': 'Email sent successfully'
+                'message': f'Notification sent via: {", ".join(methods)}'
             }),
             'isBase64Encoded': False
         }
-    except Exception as e:
+    else:
         return {
             'statusCode': 500,
             'headers': {
@@ -167,7 +226,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             },
             'body': json.dumps({
                 'success': False,
-                'error': str(e)
+                'error': 'Failed to send notification'
             }),
             'isBase64Encoded': False
         }
