@@ -10,5 +10,13 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: Yandex
+Allow: /
+
 User-agent: *
 Allow: /
+
+Sitemap: /sitemap.xml
+
+# Specific directives for SPK-SPECTRUM corporate security website
+# Contact: info@spk-spectrum.ru

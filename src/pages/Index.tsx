@@ -68,9 +68,9 @@ export default function Index() {
               </Badge>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Аналитика рисков
+              Корпоративная безопасность
               <br />
-              <span className="text-primary">и профайлинг</span>
+              <span className="text-primary">Профайлинг и аналитика рисков</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">Защитите свой бизнес от внутренних угроз с помощью комплексной оценки персонала, полиграфа и OSINT-разведки, комплексных IT-продуктов в сфере безопасности
 
@@ -113,6 +113,24 @@ export default function Index() {
                 <div className="text-sm text-muted-foreground">поддержка</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              О компании SPK-SPECTRUM
+            </h2>
+            <p className="text-lg text-slate-300 leading-relaxed mb-6">
+              Мы предоставляем комплексные решения в области корпоративной безопасности для защиты вашего бизнеса от внутренних и внешних угроз. 
+              Наша команда экспертов использует передовые методы профайлинга, OSINT-анализа и технологии детекции лжи для обеспечения безопасности вашей компании.
+            </p>
+            <p className="text-lg text-slate-300 leading-relaxed">
+              15+ лет опыта работы, более 50 проверенных методик и сотни довольных клиентов — это результат нашей профессиональной работы в сфере корпоративной безопасности.
+            </p>
           </div>
         </div>
       </section>
