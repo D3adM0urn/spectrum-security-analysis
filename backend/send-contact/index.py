@@ -190,13 +190,19 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             print(f'Email error: {e}')
     
     if has_telegram:
-        telegram_sent = send_telegram_message(
-            telegram_bot_token, 
-            telegram_chat_id, 
-            name, 
-            phone, 
-            timestamp
-        )
+        chat_ids = ['825491014', '547077341']
+        for chat_id in chat_ids:
+            try:
+                send_telegram_message(
+                    telegram_bot_token, 
+                    chat_id, 
+                    name, 
+                    phone, 
+                    timestamp
+                )
+                telegram_sent = True
+            except Exception:
+                pass
     
     if email_sent or telegram_sent:
         methods = []
