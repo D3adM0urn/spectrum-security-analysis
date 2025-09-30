@@ -15,7 +15,7 @@ from email.mime.multipart import MIMEMultipart
 from typing import Dict, Any, Optional
 from datetime import datetime
 
-def send_telegram_message(bot_token:8443654829:AAFDfTXORdyxbYgaNFSYC4ZWEv7IV_1wPkw str, chat_id: str, name: str, phone: str, timestamp: str) -> bool:
+def send_telegram_message(bot_token: str, chat_id: str, name: str, phone: str, timestamp: str) -> bool:
     try:
         message = f"""🔔 <b>Новая заявка с сайта</b>
         
@@ -87,14 +87,23 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             'isBase64Encoded': False
         }
     
+    config = {}
+    try:
+        import pathlib
+        config_path = pathlib.Path(__file__).parent / 'config.json'
+        with open(config_path, 'r', encoding='utf-8') as f:
+            config = json.load(f)
+    except Exception:
+        pass
+    
     smtp_host = os.environ.get('SMTP_HOST', '')
     smtp_port = int(os.environ.get('SMTP_PORT', '587'))
     smtp_user = os.environ.get('SMTP_USER', '')
     smtp_password = os.environ.get('SMTP_PASSWORD', '')
     email_to = os.environ.get('EMAIL_TO', '')
     
-    telegram_bot_token = os.environ.get('TELEGRAM_BOT_TOKEN', '')
-    telegram_chat_id = os.environ.get('TELEGRAM_CHAT_ID', '')
+    telegram_bot_token = os.environ.get('TELEGRAM_BOT_TOKEN', config.get('telegram', {}).get('bot_token', ''))
+    telegram_chat_id = os.environ.get('TELEGRAM_CHAT_ID', config.get('telegram', {}).get('chat_id', ''))
     
     has_email = all([smtp_host, smtp_user, smtp_password, email_to])
     has_telegram = all([telegram_bot_token, telegram_chat_id])

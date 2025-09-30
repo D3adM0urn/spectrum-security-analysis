@@ -1,0 +1,9 @@
+{
+  "telegram": {
+    "bot_token": "ВСТАВЬТЕ_СЮДА_ТОКЕН_ОТ_BOTFATHER",
+    "chat_id": "825491014"
+  },
+  "email": {
+    "enabled": false
+  }
+}
