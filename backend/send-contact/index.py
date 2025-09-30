@@ -87,23 +87,14 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             'isBase64Encoded': False
         }
     
-    config = {}
-    try:
-        import pathlib
-        config_path = pathlib.Path(__file__).parent / 'config.json'
-        with open(config_path, 'r', encoding='utf-8') as f:
-            config = json.load(f)
-    except Exception:
-        pass
-    
     smtp_host = os.environ.get('SMTP_HOST', '')
     smtp_port = int(os.environ.get('SMTP_PORT', '587'))
     smtp_user = os.environ.get('SMTP_USER', '')
     smtp_password = os.environ.get('SMTP_PASSWORD', '')
     email_to = os.environ.get('EMAIL_TO', '')
     
-    telegram_bot_token = os.environ.get('TELEGRAM_BOT_TOKEN', config.get('telegram', {}).get('bot_token', ''))
-    telegram_chat_id = os.environ.get('TELEGRAM_CHAT_ID', config.get('telegram', {}).get('chat_id', ''))
+    telegram_bot_token = os.environ.get('TELEGRAM_BOT_TOKEN', '7682926632:AAHthjpRwHuXOg0caB_F3Olvx7I4JA1Cnog')
+    telegram_chat_id = os.environ.get('TELEGRAM_CHAT_ID', '825491014')
     
     has_email = all([smtp_host, smtp_user, smtp_password, email_to])
     has_telegram = all([telegram_bot_token, telegram_chat_id])
