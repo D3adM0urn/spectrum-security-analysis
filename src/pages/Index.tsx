@@ -679,7 +679,11 @@ export default function Index() {
                   </div>
 
                   <div className="flex flex-col justify-center space-y-4">
-                    <Button size="lg" className="bg-primary hover:bg-secondary">
+                    <Button 
+                      size="lg" 
+                      className="bg-primary hover:bg-secondary"
+                      onClick={() => setContactDialogOpen(true)}
+                    >
                       <Icon name="Phone" className="mr-2 h-5 w-5" />
                       Заказать звонок
                     </Button>
