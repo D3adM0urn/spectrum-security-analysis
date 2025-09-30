@@ -26,17 +26,35 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch('https://functions.poehali.dev/4ba72e46-08e5-46e6-9615-4680419ffae5', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, phone }),
+      });
 
-    setIsSuccess(true);
-    setIsSubmitting(false);
+      const data = await response.json();
 
-    setTimeout(() => {
-      setIsSuccess(false);
-      setName("");
-      setPhone("");
-      onOpenChange(false);
-    }, 2000);
+      if (response.ok && data.success) {
+        setIsSuccess(true);
+        setTimeout(() => {
+          setIsSuccess(false);
+          setName("");
+          setPhone("");
+          onOpenChange(false);
+        }, 2000);
+      } else {
+        console.error('Failed to send:', data);
+        alert('Ошибка отправки. Попробуйте позже или позвоните нам.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Ошибка отправки. Попробуйте позже или позвоните нам.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
