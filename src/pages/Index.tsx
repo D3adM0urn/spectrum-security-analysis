@@ -95,6 +95,7 @@ export default function Index() {
                 variant="outline"
                 size="lg"
                 className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-white"
+                onClick={() => window.open('https://drive.google.com/file/d/1zY_Xgzxh_ADmB2BUjtFgy5WPfAF-Ozzp/view', '_blank')}
               >
                 <Icon name="FileText" className="mr-2 h-5 w-5" />
                 Скачать презентацию
@@ -680,6 +681,7 @@ export default function Index() {
                       variant="outline"
                       size="lg"
                       className="border-primary text-primary hover:bg-primary hover:text-white"
+                      onClick={() => window.open('https://drive.google.com/file/d/1zY_Xgzxh_ADmB2BUjtFgy5WPfAF-Ozzp/view', '_blank')}
                     >
                       <Icon name="FileText" className="mr-2 h-5 w-5" />
                       Скачать презентацию
