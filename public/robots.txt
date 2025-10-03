@@ -16,7 +16,14 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+# Запрет индексации служебных файлов и данных
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /src/
+Disallow: /backend/
+
+Sitemap: https://spk-spectrum.ru/sitemap.xml
 
 # Specific directives for SPK-SPECTRUM corporate security website
 # Contact: info@spk-spectrum.ru
