@@ -45,7 +45,12 @@ export default function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} SPK-SPECTRUM. Все права защищены.</p>
+          <p>
+            &copy; {new Date().getFullYear()} SPK-SPECTRUM. Все права защищены.{' '}
+            <Link to="/privacy" className="text-primary hover:underline">
+              Политика конфиденциальности
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
