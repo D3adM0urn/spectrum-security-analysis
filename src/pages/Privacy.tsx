@@ -99,7 +99,7 @@ export default function Privacy() {
               По вопросам, связанным с обработкой персональных данных, вы можете обратиться:
             </p>
             <p className="mt-2">
-              Email: <a href="mailto:info@spk-spectrum.ru" className="text-primary hover:underline">info@spk-spectrum.ru</a>
+              Email: <a href="mailto:info@spc-spectrum.ru" className="text-primary hover:underline">info@spc-spectrum.ru</a>
             </p>
           </section>
 
