@@ -8,9 +8,6 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-bold text-lg mb-4">SPK-SPECTRUM</h3>
-            <p className="text-sm text-muted-foreground">
-              Производство полимерпесчаных изделий высокого качества
-            </p>
           </div>
 
           <div>
