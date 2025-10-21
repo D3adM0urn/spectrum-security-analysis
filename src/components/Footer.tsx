@@ -13,17 +13,13 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Контакты</h3>
             <div className="space-y-2 text-sm text-muted-foreground">
-              <a href="mailto:info@spk-spectrum.ru" className="flex items-center hover:text-primary transition-colors">
+              <a href="mailto:info@spc-spectrum.ru" className="flex items-center hover:text-primary transition-colors">
                 <Icon name="Mail" className="h-4 w-4 mr-2" />
-                info@spk-spectrum.ru
-              </a>
-              <a href="tel:+79000000000" className="flex items-center hover:text-primary transition-colors">
-                <Icon name="Phone" className="h-4 w-4 mr-2" />
-                +7 (900) 000-00-00
+                info@spc-spectrum.ru
               </a>
               <div className="flex items-start">
                 <Icon name="MapPin" className="h-4 w-4 mr-2 mt-0.5" />
-                <span>Россия</span>
+                <span>Магнитогорск, Россия</span>
               </div>
             </div>
           </div>
