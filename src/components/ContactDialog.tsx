@@ -128,7 +128,10 @@ export default function ContactDialog({ open, onOpenChange }: ContactDialogProps
             </Button>
 
             <p className="text-xs text-muted-foreground text-center">
-              Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+              Нажимая кнопку, вы соглашаетесь с{' '}
+              <a href="/privacy" target="_blank" className="text-primary hover:underline">
+                политикой конфиденциальности
+              </a>
             </p>
           </form>
         )}
