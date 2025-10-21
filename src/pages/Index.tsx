@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import ContactDialog from "@/components/ContactDialog";
+import Footer from "@/components/Footer";
 
 export default function Index() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
