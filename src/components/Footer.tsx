@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-muted/50 border-t mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
+          <div className="text-center">
             <h3 className="font-bold text-lg mb-4">SPK-SPECTRUM</h3>
           </div>
 
