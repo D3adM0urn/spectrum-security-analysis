@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 import ContactDialog from "@/components/ContactDialog";
-import Footer from "@/components/Footer";
 
 export default function Index() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -705,7 +704,41 @@ export default function Index() {
         </div>
       </section>
 
-      <Footer />
+      {/* Footer */}
+      <footer className="bg-black py-12">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex items-center space-x-3 mb-4 md:mb-0">
+              <Icon name="Shield" className="h-8 w-8 text-secondary" />
+              <span className="text-2xl font-bold">SPK-SPECTRUM</span>
+            </div>
+            <div className="flex space-x-6">
+              <Badge
+                variant="outline"
+                className="text-gray-400 border-gray-600"
+              ></Badge>
+              <Badge
+                variant="outline"
+                className="text-gray-400 border-gray-600"
+              >
+                ISO 27001
+              </Badge>
+              <Badge
+                variant="outline"
+                className="text-gray-400 border-gray-600"
+              >
+                Конфиденциальность
+              </Badge>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+            <p className="text-gray-400">
+              © 2024 SPK-Spectrum. Все права защищены. Профессиональные услуги
+              корпоративной безопасности.
+            </p>
+          </div>
+        </div>
+      </footer>
 
       <ContactDialog open={isDialogOpen} onOpenChange={setIsDialogOpen} />
     </div>
