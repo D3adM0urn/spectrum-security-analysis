@@ -344,61 +344,6 @@ export default function Index() {
               <CardContent className="p-8">
                 <div className="flex items-start space-x-6">
                   <div className="p-3 bg-slate-100 rounded-lg">
-                    <Icon name="ShieldCheck" className="h-8 w-8 text-slate-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                      DLP система
-                    </h3>
-                    <p className="text-muted-foreground mb-6 leading-relaxed">
-                      Внедрение и настройка систем предотвращения утечек данных (Data Loss Prevention) для защиты конфиденциальной информации компании
-                    </p>
-                    <ul className="space-y-3 text-sm text-muted-foreground">
-                      <li className="flex items-center">
-                        <Icon
-                          name="Check"
-                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
-                        />
-                        <span>Развертывание и настройка DLP-системы</span>
-                      </li>
-                      <li className="flex items-center">
-                        <Icon
-                          name="Check"
-                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
-                        />
-                        <span>Контроль передачи данных по всем каналам</span>
-                      </li>
-                      <li className="flex items-center">
-                        <Icon
-                          name="Check"
-                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
-                        />
-                        <span>Мониторинг и предотвращение утечек информации</span>
-                      </li>
-                      <li className="flex items-center">
-                        <Icon
-                          name="Check"
-                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
-                        />
-                        <span>Обучение персонала работе с системой</span>
-                      </li>
-                      <li className="flex items-center">
-                        <Icon
-                          name="Check"
-                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
-                        />
-                        <span>Разработка политик безопасности данных</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
-              <CardContent className="p-8">
-                <div className="flex items-start space-x-6">
-                  <div className="p-3 bg-slate-100 rounded-lg">
                     <Icon name="Shield" className="h-8 w-8 text-slate-600" />
                   </div>
                   <div className="flex-1">
@@ -457,7 +402,111 @@ export default function Index() {
               </CardContent>
             </Card>
 
+            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-6">
+                  <div className="p-3 bg-slate-100 rounded-lg">
+                    <Icon name="PenTool" className="h-8 w-8 text-slate-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                      Графологический анализ почерка
+                    </h3>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      Профессиональный анализ почерка для оценки личностных
+                      качеств и психологических особенностей
+                    </p>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li className="flex items-center">
+                        <Icon
+                          name="Check"
+                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
+                        />
+                        <span>Кадровый менеджмент</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon
+                          name="Check"
+                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
+                        />
+                        <span>Составление психологического портрета</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon
+                          name="Check"
+                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
+                        />
+                        <span>
+                          Детекция лжи на основе графологических следов
+                        </span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon
+                          name="Check"
+                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
+                        />
+                        <span>Оценка благонадежности и личностных качеств</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
+            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-6">
+                  <div className="p-3 bg-slate-100 rounded-lg">
+                    <Icon name="ShieldCheck" className="h-8 w-8 text-slate-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                      DLP система
+                    </h3>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      Внедрение и настройка систем предотвращения утечек данных (Data Loss Prevention) для защиты конфиденциальной информации компании
+                    </p>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li className="flex items-center">
+                        <Icon
+                          name="Check"
+                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
+                        />
+                        <span>Развертывание и настройка DLP-системы</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon
+                          name="Check"
+                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
+                        />
+                        <span>Контроль передачи данных по всем каналам</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon
+                          name="Check"
+                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
+                        />
+                        <span>Мониторинг и предотвращение утечек информации</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon
+                          name="Check"
+                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
+                        />
+                        <span>Обучение персонала работе с системой</span>
+                      </li>
+                      <li className="flex items-center">
+                        <Icon
+                          name="Check"
+                          className="h-4 w-4 text-green-600 mr-3 flex-shrink-0"
+                        />
+                        <span>Разработка политик безопасности данных</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
