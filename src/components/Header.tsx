@@ -11,12 +11,12 @@ const Header = ({ onConsultationClick }: HeaderProps) => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-1">
-              <span className="text-2xl font-black text-foreground tracking-tighter" style={{ fontFamily: 'Space Grotesk, sans-serif', letterSpacing: '-0.05em' }}>
+            <div className="flex items-center gap-2">
+              <span className="text-3xl font-black text-foreground" style={{ fontFamily: 'Orbitron, sans-serif', fontWeight: 900, letterSpacing: '0.02em' }}>
                 SPK
               </span>
-              <span className="w-2 h-2 rounded-full bg-gradient-to-br from-primary to-accent" />
-              <span className="text-2xl font-black text-foreground tracking-tighter" style={{ fontFamily: 'Space Grotesk, sans-serif', letterSpacing: '-0.05em' }}>
+              <span className="w-2 h-2 rounded-full bg-gradient-to-br from-primary to-accent mx-1" />
+              <span className="text-3xl font-black text-foreground" style={{ fontFamily: 'Orbitron, sans-serif', fontWeight: 900, letterSpacing: '0.02em' }}>
                 SPECTRUM
               </span>
             </div>

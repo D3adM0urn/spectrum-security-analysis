@@ -7,12 +7,12 @@ export default function Footer() {
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <div className="flex items-center gap-1 mb-4">
-              <span className="text-xl font-black text-foreground tracking-tighter" style={{ fontFamily: 'Space Grotesk, sans-serif', letterSpacing: '-0.05em' }}>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-2xl font-black text-foreground" style={{ fontFamily: 'Orbitron, sans-serif', fontWeight: 900, letterSpacing: '0.02em' }}>
                 SPK
               </span>
-              <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-br from-primary to-accent" />
-              <span className="text-xl font-black text-foreground tracking-tighter" style={{ fontFamily: 'Space Grotesk, sans-serif', letterSpacing: '-0.05em' }}>
+              <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-br from-primary to-accent mx-0.5" />
+              <span className="text-2xl font-black text-foreground" style={{ fontFamily: 'Orbitron, sans-serif', fontWeight: 900, letterSpacing: '0.02em' }}>
                 SPECTRUM
               </span>
             </div>
