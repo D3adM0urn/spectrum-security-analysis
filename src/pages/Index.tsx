@@ -64,29 +64,30 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-slate-50 to-blue-50/50">
-        <div className="container mx-auto px-4 py-16">
+      <section className="pt-20 pb-16 bg-gradient-to-br from-blue-50 via-indigo-50/30 to-slate-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnptMC0xOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iIzMzMzMzMyIgc3Ryb2tlLW9wYWNpdHk9Ii4wMyIgZmlsbD0ibm9uZSIvPjwvZz48L3N2Zz4=')] opacity-40"></div>
+        <div className="container mx-auto px-4 py-16 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-6">
+            <div className="mb-6 animate-fade-in">
               <Badge
                 variant="outline"
-                className="mb-4 text-primary border-primary/20"
+                className="mb-4 text-primary border-primary/20 bg-white/50 backdrop-blur-sm"
               >
                 Профессиональные услуги безопасности
               </Badge>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight animate-fade-up">
               Корпоративная безопасность
               <br />
-              <span className="text-primary">Профайлинг и аналитика рисков</span>
+              <span className="gradient-text">Профайлинг и аналитика рисков</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">Защитите свой бизнес от внутренних угроз с помощью комплексной оценки персонала, полиграфа и OSINT-разведки, комплексных IT-продуктов в сфере безопасности
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{animationDelay: "0.2s"}}>Защитите свой бизнес от внутренних угроз с помощью комплексной оценки персонала, полиграфа и OSINT-разведки, комплексных IT-продуктов в сфере безопасности
 
 </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-up" style={{animationDelay: "0.4s"}}>
               <Button
                 size="lg"
-                className="bg-primary hover:bg-secondary text-lg px-8 py-4"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 onClick={() => setIsDialogOpen(true)}
               >
                 <Icon name="Phone" className="mr-2 h-5 w-5" />
@@ -95,7 +96,7 @@ export default function Index() {
               <Button
                 variant="outline"
                 size="lg"
-                className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-white"
+                className="text-lg px-8 py-4 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105 bg-white/50 backdrop-blur-sm"
                 onClick={() => {
                   const link = document.createElement('a');
                   link.href = '/КП_SPK-SPECTRUM_15 сентября 2025.pdf';
@@ -110,21 +111,21 @@ export default function Index() {
 
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">15+</div>
+              <div className="text-center p-6 rounded-xl glass-effect animate-scale-in" style={{animationDelay: "0.6s"}}>
+                <div className="text-3xl font-bold gradient-text mb-1">15+</div>
                 <div className="text-sm text-muted-foreground">лет опыта специалистов</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">50+</div>
+              <div className="text-center p-6 rounded-xl glass-effect animate-scale-in" style={{animationDelay: "0.7s"}}>
+                <div className="text-3xl font-bold gradient-text mb-1">50+</div>
                 <div className="text-sm text-muted-foreground">Проверенных методик</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">100%</div>
+              <div className="text-center p-6 rounded-xl glass-effect animate-scale-in" style={{animationDelay: "0.8s"}}>
+                <div className="text-3xl font-bold gradient-text mb-1">100%</div>
                 <div className="text-sm text-muted-foreground">Внимания каждому клиенту
 </div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">24/7</div>
+              <div className="text-center p-6 rounded-xl glass-effect animate-scale-in" style={{animationDelay: "0.9s"}}>
+                <div className="text-3xl font-bold gradient-text mb-1">24/7</div>
                 <div className="text-sm text-muted-foreground">поддержка</div>
               </div>
             </div>
@@ -133,17 +134,18 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
-        <div className="container mx-auto px-4">
+      <section id="about" className="py-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0gMTAwIDAgTCAwIDAgMCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-50"></div>
+        <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              О компании SPK-SPECTRUM
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-up">
+              О компании <span className="text-blue-400">SPK-SPECTRUM</span>
             </h2>
-            <p className="text-lg text-slate-300 leading-relaxed mb-6">
+            <p className="text-lg text-slate-300 leading-relaxed mb-6 animate-fade-up" style={{animationDelay: "0.2s"}}>
               Мы предоставляем комплексные решения в области корпоративной безопасности для защиты вашего бизнеса от внутренних и внешних угроз. 
               Наша команда экспертов использует передовые методы профайлинга, OSINT-анализа и технологии детекции лжи для обеспечения безопасности вашей компании.
             </p>
-            <p className="text-lg text-slate-300 leading-relaxed">15+ лет опыта работы специалистов, более 50 проверенных методик и сотни довольных клиентов — это результат нашей профессиональной работы в сфере корпоративной безопасности.</p>
+            <p className="text-lg text-slate-300 leading-relaxed animate-fade-up" style={{animationDelay: "0.4s"}}>15+ лет опыта работы специалистов, более 50 проверенных методик и сотни довольных клиентов — это результат нашей профессиональной работы в сфере корпоративной безопасности.</p>
           </div>
         </div>
       </section>
@@ -168,14 +170,14 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+            <Card className="border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 bg-gradient-to-br from-white to-blue-50/30 group">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-6">
-                  <div className="p-3 bg-slate-100 rounded-lg">
-                    <Icon name="UserCheck" className="h-8 w-8 text-slate-600" />
+                  <div className="p-3 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                    <Icon name="UserCheck" className="h-8 w-8 text-blue-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
                       Кадровый профайлинг
                     </h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -211,14 +213,14 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+            <Card className="border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 bg-gradient-to-br from-white to-blue-50/30 group">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-6">
-                  <div className="p-3 bg-slate-100 rounded-lg">
-                    <Icon name="Activity" className="h-8 w-8 text-slate-600" />
+                  <div className="p-3 bg-gradient-to-br from-red-100 to-red-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                    <Icon name="Activity" className="h-8 w-8 text-red-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
                       Полиграф
                     </h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -254,14 +256,14 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+            <Card className="border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 bg-gradient-to-br from-white to-purple-50/30 group">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-6">
-                  <div className="p-3 bg-slate-100 rounded-lg">
-                    <Icon name="Search" className="h-8 w-8 text-slate-600" />
+                  <div className="p-3 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                    <Icon name="Search" className="h-8 w-8 text-purple-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
                       OSINT и мониторинг
                     </h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -297,14 +299,14 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+            <Card className="border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 bg-gradient-to-br from-white to-green-50/30 group">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-6">
-                  <div className="p-3 bg-slate-100 rounded-lg">
-                    <Icon name="Code" className="h-8 w-8 text-slate-600" />
+                  <div className="p-3 bg-gradient-to-br from-green-100 to-green-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                    <Icon name="Code" className="h-8 w-8 text-green-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
                       Разработка ПО
                     </h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -340,14 +342,14 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+            <Card className="border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 bg-gradient-to-br from-white to-amber-50/30 group">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-6">
-                  <div className="p-3 bg-slate-100 rounded-lg">
-                    <Icon name="Shield" className="h-8 w-8 text-slate-600" />
+                  <div className="p-3 bg-gradient-to-br from-amber-100 to-amber-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                    <Icon name="Shield" className="h-8 w-8 text-amber-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
                       Корпоративная безопасность
                     </h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -402,14 +404,14 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white">
+            <Card className="border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 bg-gradient-to-br from-white to-pink-50/30 group">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-6">
-                  <div className="p-3 bg-slate-100 rounded-lg">
-                    <Icon name="PenTool" className="h-8 w-8 text-slate-600" />
+                  <div className="p-3 bg-gradient-to-br from-pink-100 to-pink-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                    <Icon name="PenTool" className="h-8 w-8 text-pink-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                    <h3 className="text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors">
                       Графологический анализ почерка
                     </h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -453,14 +455,14 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border border-border hover:shadow-md transition-all duration-300 bg-white md:col-span-2 md:max-w-2xl md:mx-auto">
+            <Card className="border-2 border-primary/20 hover:border-primary/50 hover-lift transition-all duration-500 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 md:col-span-2 md:max-w-2xl md:mx-auto shadow-lg group">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-6">
-                  <div className="p-3 bg-slate-100 rounded-lg">
-                    <Icon name="ShieldCheck" className="h-8 w-8 text-slate-600" />
+                  <div className="p-4 bg-gradient-to-br from-indigo-100 to-indigo-300 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-md">
+                    <Icon name="ShieldCheck" className="h-8 w-8 text-indigo-700" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-4 text-foreground">
+                    <h3 className="text-2xl font-semibold mb-4 gradient-text group-hover:scale-105 transition-transform">
                       DLP система
                     </h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -512,17 +514,17 @@ export default function Index() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="py-20 bg-slate-50">
+      <section id="team" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge
               variant="outline"
-              className="mb-4 text-muted-foreground border-border"
+              className="mb-4 text-primary border-primary/20 bg-white/50 backdrop-blur-sm"
             >
               Наша команда
             </Badge>
             <h2 className="text-4xl font-bold mb-4 text-foreground">
-              Профессиональная экспертиза
+              Профессиональная <span className="gradient-text">экспертиза</span>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Команда сертифицированных специалистов с многолетним опытом в
@@ -531,12 +533,12 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center">
-              <div className="mb-6">
-                <div className="mx-auto mb-4 w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center border border-border">
-                  <Icon name="Shield" className="h-8 w-8 text-slate-600" />
+            <div className="text-center group">
+              <div className="mb-6 p-6 rounded-2xl glass-effect hover-lift transition-all duration-500">
+                <div className="mx-auto mb-4 w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl shadow-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Icon name="Shield" className="h-10 w-10 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-foreground">
+                <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
                   Эксперты безопасности
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -546,12 +548,12 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="text-center">
-              <div className="mb-6">
-                <div className="mx-auto mb-4 w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center border border-border">
-                  <Icon name="Brain" className="h-8 w-8 text-slate-600" />
+            <div className="text-center group">
+              <div className="mb-6 p-6 rounded-2xl glass-effect hover-lift transition-all duration-500">
+                <div className="mx-auto mb-4 w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-200 rounded-2xl shadow-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Icon name="Brain" className="h-10 w-10 text-purple-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-foreground">
+                <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
                   Психологи
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -561,12 +563,12 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="text-center">
-              <div className="mb-6">
-                <div className="mx-auto mb-4 w-16 h-16 bg-white rounded-xl shadow-sm flex items-center justify-center border border-border">
-                  <Icon name="Code" className="h-8 w-8 text-slate-600" />
+            <div className="text-center group">
+              <div className="mb-6 p-6 rounded-2xl glass-effect hover-lift transition-all duration-500">
+                <div className="mx-auto mb-4 w-20 h-20 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl shadow-md flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Icon name="Code" className="h-10 w-10 text-green-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-foreground">
+                <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
                   IT-специалисты
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -596,12 +598,12 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
-              <div className="p-2 bg-slate-100 rounded-lg">
-                <Icon name="CheckCircle" className="h-6 w-6 text-slate-600" />
+            <div className="flex items-start space-x-4 p-6 glass-effect rounded-xl border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 group">
+              <div className="p-3 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                <Icon name="CheckCircle" className="h-6 w-6 text-blue-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
                   Комплексный подход
                 </h3>
                 <p className="text-muted-foreground">
@@ -610,12 +612,12 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
-              <div className="p-2 bg-slate-100 rounded-lg">
-                <Icon name="Award" className="h-6 w-6 text-slate-600" />
+            <div className="flex items-start space-x-4 p-6 glass-effect rounded-xl border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 group">
+              <div className="p-3 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                <Icon name="Award" className="h-6 w-6 text-yellow-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
                   Экспертный опыт
                 </h3>
                 <p className="text-muted-foreground">
@@ -624,12 +626,12 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
-              <div className="p-2 bg-slate-100 rounded-lg">
-                <Icon name="Lock" className="h-6 w-6 text-slate-600" />
+            <div className="flex items-start space-x-4 p-6 glass-effect rounded-xl border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 group">
+              <div className="p-3 bg-gradient-to-br from-red-100 to-red-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                <Icon name="Lock" className="h-6 w-6 text-red-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
                   Конфиденциальность
                 </h3>
                 <p className="text-muted-foreground">
@@ -638,12 +640,12 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
-              <div className="p-2 bg-slate-100 rounded-lg">
-                <Icon name="Zap" className="h-6 w-6 text-slate-600" />
+            <div className="flex items-start space-x-4 p-6 glass-effect rounded-xl border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 group">
+              <div className="p-3 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                <Icon name="Zap" className="h-6 w-6 text-indigo-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
                   Современные технологии
                 </h3>
                 <p className="text-muted-foreground">
@@ -652,12 +654,12 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
-              <div className="p-2 bg-slate-100 rounded-lg">
-                <Icon name="Clock" className="h-6 w-6 text-slate-600" />
+            <div className="flex items-start space-x-4 p-6 glass-effect rounded-xl border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 group">
+              <div className="p-3 bg-gradient-to-br from-amber-100 to-amber-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                <Icon name="Clock" className="h-6 w-6 text-amber-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
                   Оперативность
                 </h3>
                 <p className="text-muted-foreground">
@@ -666,12 +668,12 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-slate-50 rounded-lg border border-border">
-              <div className="p-2 bg-slate-100 rounded-lg">
-                <Icon name="FileCheck" className="h-6 w-6 text-slate-600" />
+            <div className="flex items-start space-x-4 p-6 glass-effect rounded-xl border-2 border-border hover:border-primary/30 hover-lift transition-all duration-500 group">
+              <div className="p-3 bg-gradient-to-br from-green-100 to-green-200 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                <Icon name="FileCheck" className="h-6 w-6 text-green-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-foreground">
+                <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
                   Детальная отчетность
                 </h3>
                 <p className="text-muted-foreground">
@@ -684,30 +686,30 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-slate-50">
+      <section id="contact" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge
               variant="outline"
-              className="mb-4 text-muted-foreground border-border"
+              className="mb-4 text-primary border-primary/20 bg-white/50 backdrop-blur-sm"
             >
               Контакты
             </Badge>
             <h2 className="text-4xl font-bold mb-4 text-foreground">
-              Свяжитесь с нами
+              Свяжитесь <span className="gradient-text">с нами</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-12">
               Получите профессиональную консультацию по вопросам корпоративной
               безопасности
             </p>
 
-            <Card className="bg-white border border-border shadow-sm">
+            <Card className="bg-gradient-to-br from-white to-blue-50/20 border-2 border-border hover:border-primary/30 shadow-xl hover:shadow-2xl transition-all duration-500">
               <CardContent className="p-8">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-6">
-                    <div className="flex items-center space-x-4">
-                      <div className="p-3 bg-slate-100 rounded-lg">
-                        <Icon name="Mail" className="h-6 w-6 text-slate-600" />
+                    <div className="flex items-center space-x-4 p-4 rounded-xl glass-effect hover-lift transition-all duration-300">
+                      <div className="p-3 bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl">
+                        <Icon name="Mail" className="h-6 w-6 text-blue-600" />
                       </div>
                       <div className="text-left">
                         <p className="text-foreground font-semibold">Email</p>
@@ -715,11 +717,11 @@ export default function Index() {
                       </div>
                     </div>
 
-                    <div className="flex items-center space-x-4">
-                      <div className="p-3 bg-slate-100 rounded-lg">
+                    <div className="flex items-center space-x-4 p-4 rounded-xl glass-effect hover-lift transition-all duration-300">
+                      <div className="p-3 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl">
                         <Icon
                           name="MapPin"
-                          className="h-6 w-6 text-slate-600"
+                          className="h-6 w-6 text-purple-600"
                         />
                       </div>
                       <div className="text-left">
@@ -732,7 +734,7 @@ export default function Index() {
                   <div className="flex flex-col justify-center space-y-4">
                     <Button 
                       size="lg" 
-                      className="bg-primary hover:bg-secondary"
+                      className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                       onClick={() => setIsDialogOpen(true)}
                     >
                       <Icon name="Phone" className="mr-2 h-5 w-5" />
@@ -741,7 +743,7 @@ export default function Index() {
                     <Button
                       variant="outline"
                       size="lg"
-                      className="border-primary text-primary hover:bg-primary hover:text-white"
+                      className="border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105 bg-white/50 backdrop-blur-sm"
                       onClick={() => {
                         const link = document.createElement('a');
                         link.href = '/КП_SPK-SPECTRUM_15 сентября 2025.pdf';
