@@ -5,11 +5,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 @font-face {
-  font-family: "Glitch";
-  src: url("https://db.onlinewebfonts.com/t/5f8c93f1cac68c55c7e8c17e9aa43180.woff2")
-    format("woff2");
+  font-family: "CR Glitch";
+  src:
+    url("https://cdn.glitch.global/fonts/cr-glitch-regular.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d8d0b3e8c5e0c5e0c5e0c5e0c5e0c5e0.woff2")
+      format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @keyframes float {
