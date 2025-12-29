@@ -5,10 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 @font-face {
-  font-family: "ZX Spectrum";
-  src: url("https://cdn.jsdelivr.net/npm/@fontsource/vt323@5.0.18/files/vt323-latin-400-normal.woff2")
+  font-family: "Aunchanted";
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Aunchanted/Aunchanted-Bold.woff2")
     format("woff2");
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
