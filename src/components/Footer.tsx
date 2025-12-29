@@ -8,11 +8,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-lg text-foreground" style={{ fontFamily: '"Press Start 2P", monospace' }}>
+              <span className="text-xl text-foreground" style={{ fontFamily: '"ZX Spectrum", monospace', letterSpacing: '0.05em' }}>
                 SPK
               </span>
               <span className="w-1.5 h-1.5 bg-gradient-to-br from-primary to-accent" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }} />
-              <span className="text-lg text-foreground" style={{ fontFamily: '"Press Start 2P", monospace' }}>
+              <span className="text-xl text-foreground" style={{ fontFamily: '"ZX Spectrum", monospace', letterSpacing: '0.05em' }}>
                 SPECTRUM
               </span>
             </div>
