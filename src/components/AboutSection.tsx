@@ -10,6 +10,23 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
           <AnimatedSection animation="slide-right">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-3xl border-gradient bg-gradient-card" />
+              <div className="relative p-12 text-center">
+                <div className="text-8xl lg:text-9xl font-bold text-gradient mb-4">SPK</div>
+                <div className="text-2xl lg:text-3xl font-bold text-foreground mb-6">SPECTRUM</div>
+                <div className="space-y-3 text-muted-foreground">
+                  <p className="text-lg">15+ лет опыта специалистов</p>
+                  <div className="h-px bg-border w-24 mx-auto" />
+                  <p className="text-lg">50+ проверенных методик</p>
+                  <div className="h-px bg-border w-24 mx-auto" />
+                  <p className="text-lg">Сотни довольных клиентов</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection animation="slide-left" delay={200}>
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50">
                 <Icon name="Sparkles" className="w-4 h-4 text-accent" />
@@ -39,23 +56,6 @@ const AboutSection = () => {
                     <span className="text-foreground">{feature.text}</span>
                   </div>
                 ))}
-              </div>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection animation="slide-left" delay={200}>
-            <div className="relative">
-              <div className="absolute inset-0 rounded-3xl border-gradient bg-gradient-card" />
-              <div className="relative p-12 text-center">
-                <div className="text-8xl lg:text-9xl font-bold text-gradient mb-4">SPK</div>
-                <div className="text-2xl lg:text-3xl font-bold text-foreground mb-6">SPECTRUM</div>
-                <div className="space-y-3 text-muted-foreground">
-                  <p className="text-lg">15+ лет опыта специалистов</p>
-                  <div className="h-px bg-border w-24 mx-auto" />
-                  <p className="text-lg">50+ проверенных методик</p>
-                  <div className="h-px bg-border w-24 mx-auto" />
-                  <p className="text-lg">Сотни довольных клиентов</p>
-                </div>
               </div>
             </div>
           </AnimatedSection>
