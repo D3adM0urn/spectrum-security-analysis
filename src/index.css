@@ -5,10 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 @font-face {
-  font-family: "Aunchanted";
-  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Aunchanted/Aunchanted-Bold.woff2")
+  font-family: "Glitch";
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Glitch/Glitch-Regular.woff2")
     format("woff2");
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 }
 

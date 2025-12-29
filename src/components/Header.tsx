@@ -12,11 +12,11 @@ const Header = ({ onConsultationClick }: HeaderProps) => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-3">
-              <span className="text-2xl text-foreground font-bold" style={{ fontFamily: '"Aunchanted", sans-serif', letterSpacing: '0.02em' }}>
+              <span className="text-2xl text-foreground" style={{ fontFamily: '"Glitch", sans-serif', letterSpacing: '0.05em' }}>
                 SPK
               </span>
               <span className="w-2 h-2 bg-gradient-to-br from-primary to-accent" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)' }} />
-              <span className="text-2xl text-foreground font-bold" style={{ fontFamily: '"Aunchanted", sans-serif', letterSpacing: '0.02em' }}>
+              <span className="text-2xl text-foreground" style={{ fontFamily: '"Glitch", sans-serif', letterSpacing: '0.05em' }}>
                 SPECTRUM
               </span>
             </div>
