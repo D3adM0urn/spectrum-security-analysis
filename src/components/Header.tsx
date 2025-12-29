@@ -11,16 +11,14 @@ const Header = ({ onConsultationClick }: HeaderProps) => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent p-[1px]">
-              <div className="w-full h-full rounded-xl bg-background flex items-center justify-center">
-                <Icon name="Shield" className="w-6 h-6 text-foreground" />
-              </div>
-            </div>
-            <div>
-              <div className="text-xl font-bold text-foreground">SPK-SPECTRUM</div>
-              <div className="text-xs text-muted-foreground font-mono">
-                Корпоративная безопасность
-              </div>
+            <div className="flex items-center gap-1">
+              <span className="text-2xl font-black text-foreground tracking-tighter" style={{ fontFamily: 'Space Grotesk, sans-serif', letterSpacing: '-0.05em' }}>
+                SPK
+              </span>
+              <span className="w-2 h-2 rounded-full bg-gradient-to-br from-primary to-accent" />
+              <span className="text-2xl font-black text-foreground tracking-tighter" style={{ fontFamily: 'Space Grotesk, sans-serif', letterSpacing: '-0.05em' }}>
+                SPECTRUM
+              </span>
             </div>
           </div>
 
